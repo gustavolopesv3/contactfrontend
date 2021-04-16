@@ -2,9 +2,11 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import { api } from "../services/api";
 import styles from "../styles/Home.module.css";
-import { Button, Table, Container } from "react-bootstrap";
+import { Button, Table, Container} from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Link from "next/link";
+
+
 
 export default function Home() {
   const [phones, setPhones] = useState([]);
@@ -16,12 +18,13 @@ export default function Home() {
   return (
     <>
       <Container>
+        <h1> Projeto Tecnologias Web</h1>
         <Table striped bordered variant="dark">
           <thead>
             <tr>
               <th>Nome</th>
-              <th>email</th>
-              <th>contato</th>
+              <th>E-Mail</th>
+              <th>Contato</th>
               <th></th>
             </tr>
           </thead>
@@ -33,17 +36,28 @@ export default function Home() {
                   <td>{phone.email}</td>
                   <td>{phone.contact}</td>
                   <Link href={`/contact/${phone.id}`}>
-                    <Button variant="secondary">Editar</Button>
+                    <Button variant="warning">Editar</Button>
                   </Link>
                 </tr>
               );
             })}
           </tbody>
         </Table>
-        <Link href="/contact">
-          <Button variant="warning">Criar novo contato</Button>
-        </Link>
-      </Container>
+
+
+        <Container className="alinhar-botoes">
+          <Link href="/contact">
+            <Button variant="warning">Criar novo contato</Button>
+          </Link>      
+        </Container>
+
+     </Container>
+
+
+
     </>
+
+
   );
+  
 }

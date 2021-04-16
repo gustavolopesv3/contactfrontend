@@ -1,5 +1,5 @@
 
-import {Form,Button, Container} from 'react-bootstrap'
+import {Form,Button, Container, Div} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { api } from '../../services/api';
 import { useEffect, useState } from 'react';
@@ -53,21 +53,24 @@ export default function ContactEdit(){
                 <Form.Control type="text" placeholder="Nome" value={name} onChange={(e)=>{setName(e.target.value)}}/>
             </Form.Group>
             <Form.Group controlId="formBasicEmail" >
-                <Form.Label>email</Form.Label>
-                <Form.Control type="email" placeholder="email" value={email} onChange={(e)=>{setEmail(e.target.value)}} />
+                <Form.Label>E-mail</Form.Label>
+                <Form.Control type="email" placeholder="E-Mail" value={email} onChange={(e)=>{setEmail(e.target.value)}} />
             </Form.Group>
             <Form.Group controlId="formBasicEmail" >
-                <Form.Label>contato</Form.Label>
+                <Form.Label>Contato</Form.Label>
                 <Form.Control type="text" placeholder="Contato" value={contatc} onChange={(e)=>{setContatc(e.target.value)}}/>
             </Form.Group>
 
-           
-            <Button variant="success" type="submit" onClick={createContato}>
-                Salvar
-            </Button>
-            <Button variant="danger" type="submit" onClick={deleteContactById}>
-                Deletar
-            </Button>
+           <Container className="alinhar-botoes">
+                <Button className="botao-salvar" variant="success" type="submit" onClick={createContato}>
+                    Salvar
+                </Button>
+
+                <Button variant="danger" type="submit" onClick={deleteContactById}>
+                    Deletar
+                </Button>
+           </Container>
+
         </Form>
         </Container>
        

@@ -22,3 +22,21 @@ a {
   height: 100%;
   background-color: #312E38;
 }
+
+h1{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.form-label{
+  color: #ffc107;
+}
+
+.botao-salvar{
+  margin-right: 30px;
+}
+
+.alinhar-botoes{
+  display: flex;
+  justify-content: center;
+}
