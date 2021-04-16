@@ -1,9 +1,10 @@
 
-import {Form,Button, Container, Div} from 'react-bootstrap'
+import {Form,Button, Container,} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { api } from '../../services/api';
 import { useEffect, useState } from 'react';
 import {useRouter} from 'next/router'
+import Link from "next/link";
 
 export default function ContactEdit(){
 
@@ -69,6 +70,11 @@ export default function ContactEdit(){
                 <Button variant="danger" type="submit" onClick={deleteContactById}>
                     Deletar
                 </Button>
+
+                <Link href="/">
+                    <Button className="voltar" variant="warning">Voltar</Button>
+                </Link>  
+
            </Container>
 
         </Form>

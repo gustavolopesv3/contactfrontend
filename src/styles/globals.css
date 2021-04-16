@@ -32,9 +32,22 @@ h1{
   color: #ffc107;
 }
 
+/* Margins dos botões das páginas */
+
 .botao-salvar{
   margin-right: 30px;
 }
+
+.salvar-contact{
+  margin-right: 30px
+}
+
+.voltar{
+  margin-left: 30px;
+}
+
+
+/* Container dos botões para alinhamento */
 
 .alinhar-botoes{
   display: flex;

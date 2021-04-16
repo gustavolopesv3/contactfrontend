@@ -43,9 +43,16 @@ export default function Contact(){
 
 
         <Container className="alinhar-botoes">
-            <Button variant="success" type="submit" onClick={createContato}>
+
+            <Button className="salvar-contact" variant="success" type="submit" onClick={createContato}>
                 Salvar
             </Button>
+
+
+            <Link href="/">
+                <Button variant="warning">Voltar</Button>
+            </Link>  
+
         </Container>
 
 

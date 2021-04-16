@@ -19,7 +19,7 @@ export default function Home() {
     <>
       <Container>
         <h1> Projeto Tecnologias Web</h1>
-        <Table striped bordered variant="dark">
+        <Table striped bordered hover  variant="dark">
           <thead>
             <tr>
               <th>Nome</th>
