@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Container>
-        <Table striped bordered>
+        <Table striped bordered variant="dark">
           <thead>
             <tr>
               <th>Nome</th>
@@ -40,7 +40,9 @@ export default function Home() {
             })}
           </tbody>
         </Table>
-        <Link href="/contact">criar novo contato</Link>
+        <Link href="/contact">
+          <Button variant="warning">Criar novo contato</Button>
+        </Link>
       </Container>
     </>
   );
