@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       <Container>
-        <h1> Projeto Tecnologias Web</h1>
+        <h1> PROJETO TECNOLOGIAS WEB</h1>
         <Table striped bordered hover  variant="dark">
           <thead>
             <tr>

@@ -48,6 +48,8 @@ export default function ContactEdit(){
 
     return(
         <Container >
+        <h1>Editar: {id} - {name}</h1>
+
          <Form >
             <Form.Group controlId="formBasicEmail" >
                 <Form.Label>Nome</Form.Label>

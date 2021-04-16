@@ -27,6 +27,8 @@ export default function Contact(){
 
     return(
         <Container >
+        <h1>CADASTRAR NOVO</h1>
+
          <Form >
             <Form.Group controlId="formBasicEmail" >
                 <Form.Label>Nome</Form.Label>
