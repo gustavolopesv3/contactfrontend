@@ -1,5 +1,6 @@
 html,
 body {
+  background-color: #312e38;
   height: 100%;
   padding: 0;
   margin: 0;
@@ -16,40 +17,51 @@ a {
   box-sizing: border-box;
 }
 
-#__next{
+#__next {
   /* padding-top: 80px; */
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: #312E38;
+  background-color: #312e38;
 }
 
-h1{
+h1 {
   color: rgb(255, 255, 255);
   text-align: center;
 }
 
-.form-label{
+.form-label {
   color: #ffc107;
 }
 
 /* Margins dos botões das páginas */
 
-.botao-salvar{
+.botao-salvar {
   margin-right: 30px;
 }
 
-.salvar-contact{
-  margin-right: 30px
+.salvar-contact {
+  margin-right: 30px;
 }
 
-.voltar{
+.voltar {
   margin-left: 30px;
 }
 
-
 /* Container dos botões para alinhamento */
 
-.alinhar-botoes{
+.alinhar-botoes {
   display: flex;
   justify-content: center;
+}
+@media (max-width: 600px) {
+  #__next {
+    /* padding-top: 80px; */
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 100%;
+    background-color: #312e38;
+  }
 }
