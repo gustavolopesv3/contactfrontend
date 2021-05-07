@@ -11,7 +11,7 @@ export default function Home() {
 
   useEffect(() => {
     getContact();
-  }, []);
+  }, [phones]);
 
   const getContact = async () => {
     await api.get(`/`).then((res) => setPhones(res.data));
